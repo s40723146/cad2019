@@ -154,9 +154,16 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content"> <a href='Task.html'>Next</a> >> Task<br /><h1>Member</h1>
-<p><span>第 1 組成員:</span><br/><a href="https://github.com/s40523120/cad2019">40523120 倉儲</a><span><span> </span>|<span> </span></span><a href="https://s40523120.github.io/cad2019">40523120 網站</a><br/><a href="https://github.com/s40723102/cad2019">40723102 倉儲</a><span><span> </span>|<span> </span></span><a href="https://s40723102.github.io/cad2019">40723102 網站</a><br/><a href="https://github.com/s40723110/cad2019">40723110 倉儲</a><span><span> </span>|<span> </span></span><a href="https://s40723110.github.io/cad2019">40723110 網站</a><br/><a href="https://github.com/s40723112/cad2019">40723112 倉儲</a><span><span> </span>|<span> </span></span><a href="https://s40723112.github.io/cad2019">40723112 網站</a><br/><a href="https://github.com/s40723115/cad2019">40723115 倉儲</a><span><span> </span>|<span> </span></span><a href="https://s40723115.github.io/cad2019">40723115 網站</a><br/><a href="https://github.com/s40723120/cad2019">40723120 倉儲</a><span><span> </span>|<span> </span></span><a href="https://s40723120.github.io/cad2019">40723120 網站</a><br/><a href="https://github.com/s40723127/cad2019">40723127 倉儲</a><span><span> </span>|<span> </span></span><a href="https://s40723127.github.io/cad2019">40723127 網站</a><br/><a href="https://github.com/s40723136/cad2019">40723136 倉儲</a><span><span> </span>|<span> </span></span><a href="https://s40723136.github.io/cad2019">40723136 網站</a><br/><a href="https://github.com/s40723140/cad2019">40723140 倉儲</a><span><span> </span>|<span> </span></span><a href="https://s40723140.github.io/cad2019">40723140 網站</a><br/><a href="https://github.com/s40723143/cad2019">40723143 倉儲</a><span><span> </span>|<span> </span></span><a href="https://s40723143.github.io/cad2019">40723143 網站</a><br/><a href="https://github.com/s40723146/cad2019">40723146 倉儲</a><span><span> </span>|<span> </span></span><a href="https://s40723146.github.io/cad2019">40723146 網站</a><br/><a href="https://github.com/s40723148/cad2019">40723148 倉儲</a><span><span> </span>|<span> </span></span><a href="https://s40723148.github.io/cad2019">40723148 網站</a></p>
-<br /> <a href='Task.html'>Next</a> >> Task</div>
+    <div id="tipue_search_content">Task << <a href='Task.html'>Previous</a> <a href='Solvespace 編譯.html'>Next</a> >> Solvespace 編譯<br /><h1>利用 cmsimde 建立靜態網誌方法</h1>
+<p>1. 在 github 建立倉儲, git clone 到近端</p>
+<p>2. 參考 <a href="https://github.com/mdecourse/newcms">https://github.com/mdecourse/newcms</a>, 加入除了 cmsimde 目錄外的所有內容</p>
+<p>以 git submodule add <a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> cmsimde</p>
+<p>建立 cmsimde 目錄, 並從 github 取下子模組內容.</p>
+<p>3.在近端維護時, 更換目錄到倉儲中的 cmsimde, 以 python wsgi.py 啟動近端網際伺服器.</p>
+<p>動態內容編輯完成後, 以 generate_pages 轉為靜態內容, 以 git add commit 及 push 將內容推到遠端.</p>
+<p>4. 之後若要以 git clone 取下包含 submodule 的所有內容, 執行:</p>
+<p>git clone --recurse-submodules <a href="https://github.com/mdecourse/newcms.git">https://github.com/mdecourse/newcms.git</a></p>
+<br />Task << <a href='Task.html'>Previous</a> <a href='Solvespace 編譯.html'>Next</a> >> Solvespace 編譯</div>
         
     <!-- footer -->
       <div class="container">
