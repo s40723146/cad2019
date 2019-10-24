@@ -4,13 +4,12 @@
 <h2>利用 cmsimde 建立靜態網誌方法</h2>
 <p>1. 在 github 建立倉儲, git clone 到近端</p>
 <p>2. 參考 <a href="https://github.com/mdecourse/newcms">https://github.com/mdecourse/newcms</a>, 加入除了 cmsimde 目錄外的所有內容</p>
-<p>以 git submodule add <a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> cmsimde</p>
-<p>建立 cmsimde 目錄, 並從 github 取下子模組內容.</p>
+<p>     以 git submodule add <a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> cmsimde</p>
+<p>     建立 cmsimde 目錄, 並從 github 取下子模組內容.</p>
 <p>3.在近端維護時, 更換目錄到倉儲中的 cmsimde, 以 python wsgi.py 啟動近端網際伺服器.</p>
-<p>動態內容編輯完成後, 以 generate_pages 轉為靜態內容, 以 git add commit 及 push 將內容推到遠端.</p>
+<p><span>     </span>動態內容編輯完成後, 以 generate_pages 轉為靜態內容, 以 git add commit 及 push 將內容<span>       </span>推到遠端.</p>
 <p>4. 之後若要以 git clone 取下包含 submodule 的所有內容, 執行:</p>
-<p>git clone --recurse-submodules <a href="https://github.com/mdecourse/newcms.git">https://github.com/mdecourse/newcms.git</a></p>
-<h2>Solvespace 編譯</h2>
+<p><span>     </span>git clone --recurse-submodules <a href="https://github.com/mdecourse/newcms.git">https://github.com/mdecourse/newcms.git</a></p><h2>Solvespace 編譯</h2>
 <h4>編譯步驟:</h4>
 <p>先將 Y:\portablegit\bin\sh.exe 改名為 sh_rename_for_solvespace.exe (透過 MSYS2 執行 shell 指令, 而非 portablegit 中的 sh.exe)</p>
 <p>git version 查驗 git 版本</p>
@@ -36,7 +35,7 @@
 <p><span>cmake .. -G "MinGW Makefiles" -DCMAKE_BUILD_TYPE=Release</span><br/><span>mingw32-make</span></p>
 <p><span>編譯完成後, 可以在 build\bin 目錄中建立 solvespace.exe, 配合相關 dll 檔案後, 即可執行.</span></p>
 <h2>Solvespace 操作</h2>
-<h3>1 - 1 </h3><h2>V-REP 操作</h2>
+<h3>1 - 1</h3><h2>V-REP 操作</h2>
 <p><span>學習如何完成 </span><a href="https://github.com/solvespace/solvespace">https://github.com/solvespace/solvespace</a><span> 原始碼的編譯, 並透過 </span><a href="http://solvespace.com/">http://solvespace.com</a><span> 學習如何建立<span> </span></span>web_rep2.zip<span> 中所需的行走車</span></p>
 <p><span>建立的零組件轉入 V-rep 3.6.1 rev 4.7z 後, 以網際 V-rep 模型控制進行控制.</span></p>
 <p><span>-------------------------------------------------------------------------------------------</span></p>
