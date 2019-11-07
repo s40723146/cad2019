@@ -9,7 +9,8 @@
 <p>3.在近端維護時, 更換目錄到倉儲中的 cmsimde, 以 python wsgi.py 啟動近端網際伺服器.</p>
 <p><span>     </span>動態內容編輯完成後, 以 generate_pages 轉為靜態內容, 以 git add commit 及 push 將內容<span>       </span>推到遠端.</p>
 <p>4. 之後若要以 git clone 取下包含 submodule 的所有內容, 執行:</p>
-<p><span>     </span>git clone --recurse-submodules <a href="https://github.com/mdecourse/newcms.git">https://github.com/mdecourse/newcms.git</a></p><h2>Solvespace 編譯</h2>
+<p><span>     </span>git clone --recurse-submodules <a href="https://github.com/mdecourse/newcms.git">https://github.com/mdecourse/newcms.git</a></p>
+<h2>Solvespace 編譯</h2>
 <h4>編譯步驟:</h4>
 <p>先將 Y:\portablegit\bin\sh.exe 改名為 sh_rename_for_solvespace.exe (透過 MSYS2 執行 shell 指令, 而非 portablegit 中的 sh.exe)</p>
 <p>git version 查驗 git 版本</p>
@@ -34,15 +35,27 @@
 <p>接著回到 solvespace 原始碼目錄, 建立 build 目錄後進入 build 目錄, 執行:</p>
 <p><span>cmake .. -G "MinGW Makefiles" -DCMAKE_BUILD_TYPE=Release</span><br/><span>mingw32-make</span></p>
 <p><span>編譯完成後, 可以在 build\bin 目錄中建立 solvespace.exe, 配合相關 dll 檔案後, 即可執行.</span></p>
-<h2>Solvespace 操作</h2>
-<h3>1 - 1</h3><h2>V-REP 操作</h2>
+<h3>About 更改</h3>
+<p><span>在 Help-&gt;About 視窗中, 納入 "This Solvespace is compiled by 學號"</span></p>
+<h2>Blog</h2>
+<p>--------課程筆記-----------</p>
+<p>cad2019/config/pelican.leo</p>
+<p>1.將老師倉儲的<span>pelican.leo裡的@edit base.html所有內容覆蓋自己的</span></p>
+<p><span>2.Pelican設定</span></p>
+<p><span>      共用 @edit pelocanconf.py  將名稱改為自己的</span></p>
+<p><span>       遠端 @edit pelocanconf.py SITEUR="網站"</span></p>
+<p>blog的網址是依照 @path markdown (@edit 20191031-1.md)來決定</p>
+<p>local.blog &gt; go script</p><h2>Solvespace 操作</h2>
+<h3>1 - 1</h3>
+<h2>V-REP 操作</h2>
 <p><span>學習如何完成 </span><a href="https://github.com/solvespace/solvespace">https://github.com/solvespace/solvespace</a><span> 原始碼的編譯, 並透過 </span><a href="http://solvespace.com/">http://solvespace.com</a><span> 學習如何建立<span> </span></span>web_rep2.zip<span> 中所需的行走車</span></p>
 <p><span>建立的零組件轉入 V-rep 3.6.1 rev 4.7z 後, 以網際 V-rep 模型控制進行控制.</span></p>
 <p><span>-------------------------------------------------------------------------------------------</span></p>
 <p>將 D:\.....V-REP3\V-REP_PRO_EDU\programming\remoteApiBindings\lib</p>
 <p>       \lib\Windows\64Bit裡的remoteApi.dll</p>
 <p>覆蓋 web_vrep2\web_vrep2裡的<span>remoteApi.dll</span></p>
-<h3>1 - 1 Two - Wheeler</h3><h1>About</h1>
+<h3>1 - 1 Two - Wheeler</h3>
+<h1>About</h1>
 <p>此內容管理系統以 <a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> 作為 submodule 運作, 可以選定對應的版本運作, cmsimde 可以持續改版, 不會影響之前設為 submodule, 使用舊版 cmsimde 模組的內容管理相關運作.</p>
 <h4></h4>
 <h1>Develop</h1>
