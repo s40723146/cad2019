@@ -152,7 +152,26 @@
 <p>有限元素分析（<span>FEA</span>）的應用包括結構分析、熱分析、流體力學和電磁兼容性</p>
 <p>其中，有限元素分析（<span>FEA</span>）最常用於結構和固體力學，並應用於計算機械性能（例如應力和位移）。這些（應力和位移）的計算對機械部件的性能非常重要，甚至能夠預防故障。</p>
 <p>本章中，我們將處理實體零件的結構應力和應變分析。</p>
-<h2><span>教學內容</span></h2>
+<h2>教學內容</h2>
 <p>建立節點</p>
+<p>現在，我們將關注節點和馬達，大多數時候，我們知道每個關節的準確的位置和方向，在這種情況下，我們只需使用按下<span>[</span>菜單欄<span>-&gt;</span>添加<span>-&gt;</span>關節<span>-&gt; ...]</span>來添加關節，然後我們可以使用“位置”欄和“方向”欄更改其位置和方向。在其他情況下，我們只有<span> D-H</span>矩陣（即<span>D-H</span>）參數，在這種情況下，我們可以透過模型瀏覽器中位於<span>Models / tools / Denavit-Hartenberg joint creator.ttm</span>中的工具模型來構建關節，</p>
+<p>但在其他的狀況下，我們不清楚關節位置和他的方向。所以，我們需要從導入的網格中提取它們。讓我們假設這是我們目前的情況。不用處理修改過的，更近似的網格，而是打開一個新情景，然後再次導入原始<span>CAD</span>數據。大多數時候，我們可以從最初的網格中提取網格或它的基本形狀，第一步是細分原始網格，如果不起作用，我們將經由三角形編輯模式來進行操作。讓我們假設我們現在可以細分原始的網格，我們現在可以觀察更小的物件，我們正在尋找迴轉形狀，它可以用作在其位置創建節點並以相同方向來參考。首先，刪除所有不需要的物件，有時在多個打開的場景中工作也很有幫助，它可以便於可視化和操作，在我們的案例中，我們首先注意機器人的底座：它包含一個圓柱體，該圓柱體的第一個節點的位置正確。在三角形編輯模式下，我們有：</p>
+<p><img alt="" height="245" src="/images/T1.jpg" width="300"/></p>
+<p>[Robot base: normal and triangle edit mode visualization]</p>
+<p>我們通過頁面選擇器工具欄按鈕來更改攝影機的視角，為了從側面來查看物件。<span>fit-to-view</span>工具欄按鈕可以派上用場，可用來正確地框束物件的版本。然後，我們切換到<span>vertex edit</span>模式，並選擇屬於圓盤上的所有頂點。記住我們可以通過打開<span>/</span>關閉某些層，我們可以隱藏場景中的其他物件。然後，我們切換回三角形編輯模式：</p>
+<p><img alt="" height="185" src="/images/T2.jpg" width="300"/></p>
+<p>[Selected upper disc, vertex edit mode (1 &amp; 2), triangle edit mode (3)]</p>
+<p>現在，我們單擊“提取圓柱體”（在這種情況下，“提取形狀”也將起作用），這只是在場景中創建了圓柱體形狀，而這個場景是根據所選定的三角形我們離開編輯模式並放棄修改物件，現在我們新增一個旋轉節點，<span>[</span>菜單欄<span>-&gt;</span>新增<span>-&gt;</span>節點<span>-&gt;</span>旋轉<span>]</span>，然後讓它保持被選擇的狀態，並控制提取圓柱體的形狀在位置框的“位置”選項上，我們點擊“<span>Apply to selection (</span>應用於選擇<span>)</span>”，這基本上將圓柱體的<span>x / y / z</span>的位置複製到節點，現在兩者的位置都相同。在<span>[</span>方向<span>]</span>選項上，我們也點擊“<span>Apply to selection(</span>應用於選擇<span>)</span>”：現在，我們選擇的物件方向也變成相同，有些時候，我們將需要圍繞其自身的參考範圍的旋轉節點增加約<span> 90/180</span>度，以獲得正確的方向或旋轉方向，如果需要，我們可以在該對話框的<span>[</span>旋轉<span>]</span>選項上執行此操作（在這種情況下，請不要忘記點擊“<span>Own frame(</span>自有框架<span>)</span>按鈕</p>
+<p><img alt="" height="305" src="/images/T3.jpg" width="300"/></p>
+<p>[Joint in correct location, with the correct orientation]</p>
+<p>現在我們將節點複製回原始場景並保存<span>(</span>不要忘記定期存檔你的資料，復原<span>/</span>重做功能非常有用，但不能保護你免於其他災難的影響<span>)</span></p>
+<p>我們對機器人的所有節點都重複上面的過程，然後重新命名他們，我們還將所有節點和他們的屬性稍長一點，讓我們方便查看所有關節</p>
+<p>透過默認，將節點分配於可見圖層<span>2</span>，但可以在物件的公共屬性中對其進行修改，</p>
+<p>現在，我們將所有節點分配給可見圖層<span>10</span>，然後為場景臨時啟用可見圖層<span>10</span>，以使這些節點也可視化</p>
+<p>（默認情況下，僅激活場景的可見圖層<span>1-8</span>），這就是我們到目前為止的結果（模型<span>ResizableFloor_5_25</span>模型在模型屬性對話框中暫時不可見）：</p>
+<p><img alt="" height="237" src="/images/T4.jpg" width="300"/></p>
+<p>[Joints in correct configuration]</p>
+<p>到這裡，我們可以開始建構模型層次的結構並完成它的定義，但是，如果我們想要可以動態啟用<span>OPUR</span>機器人，則還有一個額外的步驟</p>
+<h3> 重點整理</h3>
 <h1>About</h1>
 <p>此內容管理系統以 <a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> 作為 submodule 運作, 可以選定對應的版本運作, cmsimde 可以持續改版, 不會影響之前設為 submodule, 使用舊版 cmsimde 模組的內容管理相關運作.</p>

@@ -143,7 +143,7 @@ img.add_border {
                             <li><a href="./../blog/index.html">blog</a></li>
                         </ul>
                       </li>
-                     <li><a href='Member.html'>Member</a><li class='has-children'><a href='Task.html'>Task</a><ul class='dropdown'><li><a href='利用 cmsimde 建立靜態網誌方法.html'>利用 cmsimde 建立靜態網誌方法</a><li class='has-children'><a href='Solvespace 編譯.html'>Solvespace 編譯</a><ul class='dropdown'><li><a href='About 更改.html'>About 更改</a></li></ul><li><a href='Blog.html'>Blog</a><li class='has-children'><a href='Solvespace 操作.html'>Solvespace 操作</a><ul class='dropdown'><li><a href='1 - 1.html'>1 - 1</a></li></ul><li class='has-children'><a href='V-REP 操作.html'>V-REP 操作</a><ul class='dropdown'><li><a href='1 - 1 Two - Wheeler.html'>1 - 1 Two - Wheeler</a></li></li></ul></ul><li><a href='組員工作分配.html'>組員工作分配</a><li class='has-children'><a href='繪圖.html'>繪圖</a><ul class='dropdown'><li><a href='NX繪圖.html'>NX繪圖</a><li><a href='SloveSpace繪圖.html'>SloveSpace繪圖</a></li></ul><li class='has-children'><a href='教科書.html'>教科書</a><ul class='dropdown'><li><a href='NX應力分析.html'>NX應力分析</a><li><a href='第八章.html'>第八章</a><li><a href='教學內容.html'>教學內容</a></li></ul><li><a href='About.html'>About</a></li>
+                     <li><a href='Member.html'>Member</a><li class='has-children'><a href='Task.html'>Task</a><ul class='dropdown'><li><a href='利用 cmsimde 建立靜態網誌方法.html'>利用 cmsimde 建立靜態網誌方法</a><li class='has-children'><a href='Solvespace 編譯.html'>Solvespace 編譯</a><ul class='dropdown'><li><a href='About 更改.html'>About 更改</a></li></ul><li><a href='Blog.html'>Blog</a><li class='has-children'><a href='Solvespace 操作.html'>Solvespace 操作</a><ul class='dropdown'><li><a href='1 - 1.html'>1 - 1</a></li></ul><li class='has-children'><a href='V-REP 操作.html'>V-REP 操作</a><ul class='dropdown'><li><a href='1 - 1 Two - Wheeler.html'>1 - 1 Two - Wheeler</a></li></li></ul></ul><li><a href='組員工作分配.html'>組員工作分配</a><li class='has-children'><a href='繪圖.html'>繪圖</a><ul class='dropdown'><li><a href='NX繪圖.html'>NX繪圖</a><li><a href='SloveSpace繪圖.html'>SloveSpace繪圖</a></li></ul><li class='has-children'><a href='教科書.html'>教科書</a><ul class='dropdown'><li><a href='NX應力分析.html'>NX應力分析</a><li><a href='第八章.html'>第八章</a><li class='has-children'><a href='教學內容.html'>教學內容</a><ul class='dropdown'><li><a href='重點整理.html'>重點整理</a></li></li></ul></ul><li><a href='About.html'>About</a></li>
                       </ul>
                 </nav>
               </div>
@@ -154,7 +154,7 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">第八章 << <a href='第八章.html'>Previous</a> <a href='About.html'>Next</a> >> About<br /><h1>教學內容</h1>
+    <div id="tipue_search_content">第八章 << <a href='第八章.html'>Previous</a> <a href='重點整理.html'>Next</a> >> 重點整理<br /><h1>教學內容</h1>
 <p>建立節點</p>
 <p>現在，我們將關注節點和馬達，大多數時候，我們知道每個關節的準確的位置和方向，在這種情況下，我們只需使用按下<span>[</span>菜單欄<span>-&gt;</span>添加<span>-&gt;</span>關節<span>-&gt; ...]</span>來添加關節，然後我們可以使用“位置”欄和“方向”欄更改其位置和方向。在其他情況下，我們只有<span> D-H</span>矩陣（即<span>D-H</span>）參數，在這種情況下，我們可以透過模型瀏覽器中位於<span>Models / tools / Denavit-Hartenberg joint creator.ttm</span>中的工具模型來構建關節，</p>
 <p>但在其他的狀況下，我們不清楚關節位置和他的方向。所以，我們需要從導入的網格中提取它們。讓我們假設這是我們目前的情況。不用處理修改過的，更近似的網格，而是打開一個新情景，然後再次導入原始<span>CAD</span>數據。大多數時候，我們可以從最初的網格中提取網格或它的基本形狀，第一步是細分原始網格，如果不起作用，我們將經由三角形編輯模式來進行操作。讓我們假設我們現在可以細分原始的網格，我們現在可以觀察更小的物件，我們正在尋找迴轉形狀，它可以用作在其位置創建節點並以相同方向來參考。首先，刪除所有不需要的物件，有時在多個打開的場景中工作也很有幫助，它可以便於可視化和操作，在我們的案例中，我們首先注意機器人的底座：它包含一個圓柱體，該圓柱體的第一個節點的位置正確。在三角形編輯模式下，我們有：</p>
@@ -173,7 +173,8 @@ img.add_border {
 <p>（默認情況下，僅激活場景的可見圖層<span>1-8</span>），這就是我們到目前為止的結果（模型<span>ResizableFloor_5_25</span>模型在模型屬性對話框中暫時不可見）：</p>
 <p><img alt="" height="237" src="./../images/T4.jpg" width="300"/></p>
 <p>[Joints in correct configuration]</p>
-<p>到這裡，我們可以開始建構模型層次的結構並完成它的定義，但是，如果我們想要可以動態啟用<span>OPUR</span>機器人，則還有一個額外的步驟</p><br />第八章 << <a href='第八章.html'>Previous</a> <a href='About.html'>Next</a> >> About</div>
+<p>到這裡，我們可以開始建構模型層次的結構並完成它的定義，但是，如果我們想要可以動態啟用<span>OPUR</span>機器人，則還有一個額外的步驟</p>
+<br />第八章 << <a href='第八章.html'>Previous</a> <a href='重點整理.html'>Next</a> >> 重點整理</div>
         
     <!-- footer -->
       <div class="container">
