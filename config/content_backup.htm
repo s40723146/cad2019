@@ -159,7 +159,61 @@
 <p><span>---------------------------------------------------------------------------------------</span></p>
 <p><span><img alt="" height="280" src="/images/6.png" width="300"/></span></p>
 <p><span><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/hd3wI90V7qo" width="400"></iframe></span></p>
-<h2><span>繪圖軟體差異性</span></h2><h1>教科書</h1>
+<h2>繪圖軟體差異性</h2>
+<p>我們這次使用了四種不同的繪圖軟體來繪製，而下列會寫出使用的心得並</p>
+<p>分別提出他們的優點及缺點，有些繪圖軟體有其他功能，</p>
+<p>但我們幾乎都只使用''繪圖、繪製零件''的功能，所以在此只比較他們的繪製差異性。</p>
+<p>------------------------------------------------------------------------------------------------------</p>
+<p><strong>Inventor2019:</strong><span> </span>繪製過程沒什麼太大問題，繪製完線條之後才進行標註約束，讓他成為我們指定的形狀及尺寸之後再去做擠出成型的動作。</p>
+<p><strong>NX12 : </strong>不知道是不是工作環境的問題，繪製過程常常卡頓，和其他的繪圖難體多花了一些時間，繪製線條完之後都會先以基準線XYZ去做標註的動作，。</p>
+<p><strong>SolveSpace : </strong>跑起來最為流暢，可惜功能不多，標註、繪製的限制較多(線與線的標註、平面的選定)。</p>
+<p><strong>Onshape :<span> </span></strong>需要註冊，繪製起來最順手，介面功能清楚，隨時雲端存檔，可以直接讓別人觀看你所繪製的零組件。</p>
+<p><span>------------------------------------------------------------------------------------------------------</span></p>
+<table>
+<tbody>
+<tr>
+<td></td>
+<td>繪圖時間(難易度)</td>
+<td>功能性</td>
+<td>特色</td>
+</tr>
+<tr>
+<td><strong>Inventor2019</strong></td>
+<td>一般(中等)</td>
+<td>
+<p>繪圖、模擬、組合</p>
+</td>
+<td><span>3D部分(組合、模擬)較強</span></td>
+</tr>
+<tr>
+<td><strong>NX12</strong></td>
+<td>較久(難)</td>
+<td>
+<p>繪圖、模擬、組合、後處理</p>
+</td>
+<td><span>整合設計、模擬與製造</span></td>
+</tr>
+<tr>
+<td><strong>SolveSpace</strong></td>
+<td>一般(中上)</td>
+<td><span>繪圖、組合</span></td>
+<td>
+<p>檔案大小 小</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>Onshape</strong></p>
+</td>
+<td>快(簡單)</td>
+<td><span>繪圖、組合</span></td>
+<td>
+<p>不須安裝</p>
+<p>檔案隨時存檔在雲端</p>
+</td>
+</tr>
+</tbody>
+</table><h1>教科書</h1>
 <h3>NX應力分析</h3>
 <p>第八章</p>
 <p>第八章 有限元素分析</p>
@@ -168,7 +222,7 @@
 <p>在最後，許多軟體像是NX12都能解決有限元素分析（<span>FEA</span>）的問題並將結果輸出且可視化。有限元素分析（<span>FEA</span>）能夠幫助工程師在製造和測試前，更加了解產品的性能。</p>
 <p>有限元素分析（<span>FEA</span>）的應用包括結構分析、熱分析、流體力學和電磁兼容性</p>
 <p>其中，有限元素分析（<span>FEA</span>）最常用於結構和固體力學，並應用於計算機械性能（例如應力和位移）。這些（應力和位移）的計算對機械部件的性能非常重要，甚至能夠預防故障。</p>
-<p>本章中，我們將處理實體零件的結構應力和應變分析。</p><h2>教學內容</h2>
+<p>本章中，我們將處理實體零件的結構應力和應變分析。</p><h2>WEEK17內容</h2>
 <p>建立節點</p>
 <p>現在，我們將關注節點和馬達，大多數時候，我們知道每個關節的準確的位置和方向，在這種情況下，我們只需使用按下<span>[</span>菜單欄<span>-&gt;</span>添加<span>-&gt;</span>關節<span>-&gt; ...]</span>來添加關節，然後我們可以使用“位置”欄和“方向”欄更改其位置和方向。在其他情況下，我們只有<span> D-H</span>矩陣（即<span>D-H</span>）參數，在這種情況下，我們可以透過模型瀏覽器中位於<span>Models / tools / Denavit-Hartenberg joint creator.ttm</span>中的工具模型來構建關節，</p>
 <p>但在其他的狀況下，我們不清楚關節位置和他的方向。所以，我們需要從導入的網格中提取它們。讓我們假設這是我們目前的情況。不用處理修改過的，更近似的網格，而是打開一個新情景，然後再次導入原始<span>CAD</span>數據。大多數時候，我們可以從最初的網格中提取網格或它的基本形狀，第一步是細分原始網格，如果不起作用，我們將經由三角形編輯模式來進行操作。讓我們假設我們現在可以細分原始的網格，我們現在可以觀察更小的物件，我們正在尋找迴轉形狀，它可以用作在其位置創建節點並以相同方向來參考。首先，刪除所有不需要的物件，有時在多個打開的場景中工作也很有幫助，它可以便於可視化和操作，在我們的案例中，我們首先注意機器人的底座：它包含一個圓柱體，該圓柱體的第一個節點的位置正確。在三角形編輯模式下，我們有：</p>
@@ -187,8 +241,7 @@
 <p>（默認情況下，僅激活場景的可見圖層<span>1-8</span>），這就是我們到目前為止的結果（模型<span>ResizableFloor_5_25</span>模型在模型屬性對話框中暫時不可見）：</p>
 <p><img alt="" height="237" src="/images/T4.jpg" width="300"/></p>
 <p>[Joints in correct configuration]</p>
-<p>到這裡，我們可以開始建構模型層次的結構並完成它的定義，但是，如果我們想要可以動態啟用<span>OPUR</span>機器人，則還有一個額外的步驟</p>
-<h3>重點整理</h3>
+<p>到這裡，我們可以開始建構模型層次的結構並完成它的定義，但是，如果我們想要可以動態啟用<span>OPUR</span>機器人，則還有一個額外的步驟</p><h3>重點整理</h3>
 <p>建立節點<br/>Building the joints<br/>---------------------------------------------------------------<br/>知道每個關節的準確的位置和方向的情況<br/>know the exact position and orientation of each of the joints<br/> <br/>1.[菜單欄-&gt;添加-&gt;節點-&gt; ...]來添加節點<br/> add the joints with [Menu bar --&gt; Add --&gt; Joints --&gt; ...]</p>
 <p>2.可以使用“位置”欄和“方向”欄更改其位置和方向<br/> we can change their position and orientation with the position dialog and orientation dialog.<br/> <br/>3.透過模型瀏覽器中位於Models / tools / Denavit-Hartenberg joint creator.ttm中的工具模型來構建關節每個關節的準確的位置和方向<br/> we can build our joints via the tool model located in Models/tools/Denavit-Hartenberg joint creator.ttm, in the model browser. <br/> Othertimes, we have no information about the joint locations and orientations<br/>---------------------------------------------------------------<br/>不知道每個關節的準確的位置和方向的情況<br/>we have no information about the joint locations and orientations</p>
 <p>1.打開一個新情景，然後再次導入原始CAD數據<br/> we open a new scene, and import the original CAD data again</p>
