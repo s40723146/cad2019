@@ -39,15 +39,16 @@ CMSimfly 網際內容管理
 <div class="slides">
 <section data-markdown>
     <script type="text/template">
-## CMSimfly 網際內容管理
+# CAD2019
+## 40723146
+#### [網站](https://s40723146.github.io/cad2019/content/index.html)
+#### [倉儲](https://github.com/s40723146/cad2019)
 
-### KMOLab
 
 <small>
 Created by [KMOLab](http://lab.kmol.info/)
 </small>
 
-[CMSimfly 網誌](./../blog/index.html)
 
 
     </script>
@@ -57,15 +58,14 @@ Created by [KMOLab](http://lab.kmol.info/)
 						
 <section data-markdown>
     <script type="text/template">
-# 投影片快捷鍵
+### 繪圖
+* [NX12](https://s40723146.github.io/cad2019/content/NX%E7%B9%AA%E5%9C%96.html)
 
-* 利用箭頭上下前後換頁
-* 按 f 鍵進入全螢幕模式 (full screen)
-* 按 s 鍵可以顯示投影片筆記 (show)
-* 按 o 鍵可以切換單張或全域檢視 (overview)
-* 按 b 或 . 鍵可以切換螢幕黑屏 (black)
-* 按 Esc 可以退出全螢幕或全域檢視 (Escape)
+* [Onshape](https://s40723146.github.io/cad2019/content/Onshape%E7%B9%AA%E5%9C%96.html)
 
+* [Solvespace](https://s40723146.github.io/cad2019/content/SloveSpace%E7%B9%AA%E5%9C%96.html)
+
+* Inventor2019 (另一組員)
     </script>
 </section>
 
@@ -75,12 +75,10 @@ Created by [KMOLab](http://lab.kmol.info/)
 <section data-markdown>
     <script type="text/template">
 <!-- 請注意, @others 不可以內縮 -->
-# 數學符號與方程式
+# NX12 繪圖認證
+<iframe src="https://player.vimeo.com/video/383853993" width="640" height="492" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-Inline math equations go in like so: $\omega = d\phi / dt$. Display
-math should get its own line and be put in in double-dollarsigns:
 
-$$I = \int \rho R^{2} dV$$
     </script>
 </section>
 
@@ -90,32 +88,9 @@ $$I = \int \rho R^{2} dV$$
 <section data-markdown>
     <script type="text/template">
 <!-- 請注意, @others 不可以內縮 -->
-## 利用 Markdown 寫投影片
-以下利用 Markdown 格式展示 Python 程式碼:
-```
-# use threading and subprocess to threading the make process
-import os
-import subprocess
-import threading
+## Onshape 繪圖認證
+<iframe src="https://player.vimeo.com/video/383856005" width="640" height="492" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-def domake():
-    
-    path = "../exposed/api/exposed"
-    ubuntu = "../Ubuntu"
-    
-    # create obj path
-    
-    if not os.path.exists(path+"/../obj"):
-        os.makedirs(path+"/../obj")
-    
-    subprocess.call(["make", "clean"], cwd=path)
-    subprocess.call("make", cwd=path)
-    subprocess.call(["cp", "{libslvs.so, _slvs.so, slvs.py}", ubuntu], cwd=path)
-    subprocess.call(["python3", "circle_ex.py"], cwd=path+"/"+ubuntu)
-    
-make = threading.Thread(target=domake)
-make.start()
-```
     </script>
 </section>
 
@@ -124,13 +99,75 @@ make.start()
 						
 <section data-markdown>
     <script type="text/template">
-## 使用 iframe 導入影片
+<!-- 請注意, @others 不可以內縮 -->
+## Solvespace 自走車組件
+<iframe src="https://player.vimeo.com/video/383856654" width="640" height="492" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-### 導入影片 template
 
-<iframe src="https://player.vimeo.com/video/183950627" width="640" height="492" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
     </script>
 </section>
+
+
+
+						
+<section data-markdown>
+    <script type="text/template">
+<!-- 請注意, @others 不可以內縮 -->
+## [繪圖軟體差異性](https://s40723146.github.io/cad2019/content/%E7%B9%AA%E5%9C%96%E8%BB%9F%E9%AB%94%E5%B7%AE%E7%95%B0%E6%80%A7.html)<small>
+* Inventor2019: 繪製過程沒什麼太大問題，繪製完線條之後才進行標註約束，讓他成為我們指定的形狀及尺寸之後再去做擠出成型的動作。
+
+* NX12 : 不知道是不是工作環境的問題，繪製過程常常卡頓，和其他的繪圖難體多花了一些時間，繪製線條完之後都會先以基準線XYZ去做標註的動作，。
+
+* SolveSpace : 跑起來最為流暢，可惜功能不多，標註、繪製的限制較多(線與線的標註、平面的選定)。
+
+* Onshape : 需要註冊，繪製起來最順手，介面功能清楚，隨時雲端存檔，可以直接讓別人觀看你所繪製的零組件。<small>
+
+    </script>
+</section>
+
+
+
+						
+</section>
+
+<section data-markdown>
+    <script type="text/template">
+### [NX應力分析](https://s40723146.github.io/cad2019/content/NX%E6%87%89%E5%8A%9B%E5%88%86%E6%9E%90.html)
+<small>
+第八章 有限元素分析
+* 有限元素分析（FEA）是有限元素方法（FEM）的實際運用，他用於對結構或流體所施加的因素(例如力、壓力、熱量和振動)來做出反應行為。
+通常，開始的過程都會先從創建幾何模型開始，之後再將模型細分(網狀化)成許多在特定的節點上連結在一起的簡單幾何形狀的小塊(元素)，而材料的性質和限制條件也會應用在元素上。
+在最後，許多軟體像是NX12都能解決有限元素分析（FEA）的問題並將結果輸出且可視化。有限元素分析（FEA）能夠幫助工程師在製造和測試前，更加了解產品的性能。
+有限元素分析（FEA）的應用包括結構分析、熱分析、流體力學和電磁兼容性
+其中，有限元素分析（FEA）最常用於結構和固體力學，並應用於計算機械性能（例如應力和位移）。這些（應力和位移）的計算對機械部件的性能非常重要，甚至能夠預防故障。
+本章中，我們將處理實體零件的結構應力和應變分析。
+    </script>
+</section>
+
+
+						
+<section>
+<section data-markdown>
+    <script type="text/template">
+<!-- 請注意, @others 不可以內縮 -->
+### [WEEK17 建立節點](https://s40723146.github.io/cad2019/content/%E9%87%8D%E9%BB%9E%E6%95%B4%E7%90%86.html)
+#### Building the joints<small> 
+----------------------------------------------------
+* 知道每個關節的準確的位置和方向的情況
+know the exact position and orientation of each of the joints
+
+* 1.[菜單欄->添加->節點-> ...]來添加節點
+add the joints with [Menu bar --> Add --> Joints --> ...]
+
+* 2.可以使用“位置”欄和“方向”欄更改其位置和方向
+we can change their position and orientation with the position dialog and orientation dialog.
+
+* 3.透過模型瀏覽器中位於Models / tools / Denavit-Hartenberg joint creator.ttm中的工具模型來構建關節每個關節的準確的位置和方向
+we can build our joints via the tool model located in Models/tools/Denavit-Hartenberg joint creator.ttm, in the model browser.
+Othertimes, we have no information about the joint locations and orientations
+    </script>
+</section>
+
 
 
 						

@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Created by Leo: http://leoeditor.com/leo_toc.html -->
 <leo_file xmlns:leo="http://leoeditor.com/namespaces/leo-python-editor/1.1" >
-<leo_header file_format="2" tnodes="0" max_tnode_index="0" clone_windows="0"/>
-<globals body_outline_ratio="0.5" body_secondary_ratio="0.5">
-	<global_window_position top="50" left="50" height="500" width="700"/>
-	<global_log_window_position top="0" left="0" height="0" width="0"/>
-</globals>
+<leo_header file_format="2"/>
+<globals/>
 <preferences/>
 <find_panel_settings/>
 <vnodes>
@@ -13,29 +10,40 @@
 <v t="leo.20180902120538.2"><vh>@data qt-gui-plugin-style-sheet</vh></v>
 <v t="leo.20180902120538.3"><vh>@string initial_split_orientation = horizontal</vh></v>
 </v>
-<v t="leo.20180902120523.1" a="E"><vh>編輯 reveal</vh>
-<v t="leo.20180902120523.2" a="E"><vh>@path ./../reveal</vh>
-<v t="leo.20180902120523.3" a="E"><vh>@clean index.html</vh>
-<v t="leo.20180902120523.4" a="E"><vh>html</vh>
+<v t="leo.20180902120523.1"><vh>編輯 reveal</vh>
+<v t="leo.20180902120523.2"><vh>@path ./../reveal</vh>
+<v t="leo.20180902120523.3"><vh>@clean index.html</vh>
+<v t="leo.20180902120523.4"><vh>html</vh>
 <v t="leo.20180902120523.5"><vh>head</vh></v>
-<v t="leo.20180902120523.6" a="E"><vh>body</vh>
-<v t="leo.20180902120523.7" a="E"><vh>reveal div</vh>
-<v t="leo.20180902120523.8" a="E"><vh>slides div</vh>
-<v t="leo.20180902120523.9" a="E"><vh>封面投影片</vh>
+<v t="leo.20180902120523.6"><vh>body</vh>
+<v t="leo.20180902120523.7"><vh>reveal div</vh>
+<v t="leo.20180902120523.8"><vh>slides div</vh>
+<v t="leo.20180902120523.9"><vh>封面投影片</vh>
 <v t="leo.20180902120523.10"><vh>封面投影片內容</vh></v>
 </v>
-<v t="leo.20180902120523.11" a="E"><vh>快捷鍵</vh>
-<v t="leo.20180902120523.12"><vh>投影片快捷鍵</vh></v>
+<v t="leo.20180902120523.11"><vh>繪圖</vh>
+<v t="leo.20180902120523.12"><vh>簡介</vh></v>
 </v>
 <v t="leo.20180902120523.13"><vh>各式內容引用範例</vh>
-<v t="leo.20180902120523.14" a="E"><vh>導入數學符號與方程式</vh>
-<v t="leo.20180902120523.15"><vh>LaTeX 格式方程式</vh></v>
+<v t="leo.20180902120523.14"><vh>NX12</vh>
+<v t="leo.20180902120523.15"><vh>NX12</vh></v>
 </v>
-<v t="leo.20180902120523.16" a="E"><vh>導入縮排程式碼</vh>
-<v t="leo.20180902120523.17"><vh>引用程式碼</vh></v>
+<v t="leo.20180902120523.16"><vh>Onshape</vh>
+<v t="leo.20180902120523.17"><vh>Onshape</vh></v>
 </v>
-<v t="leo.20180902120523.18" a="E"><vh>導入影片</vh>
-<v t="leo.20180902120523.19"><vh>iframe 導入影片</vh></v>
+<v t="leo.20200110055408.1"><vh>Solvespace</vh>
+<v t="leo.20200110055408.2"><vh>Solvespace</vh></v>
+</v>
+<v t="leo.20200110055410.1"><vh>繪圖差異</vh>
+<v t="leo.20200110055410.2"><vh>Solvespace</vh></v>
+</v>
+</v>
+<v t="leo.20200110060437.1"><vh>WW</vh>
+<v t="leo.20200110060437.2"><vh>簡介</vh></v>
+</v>
+<v t="leo.20200110061056.1"><vh>WW12</vh>
+<v t="leo.20200110061056.2"><vh>1</vh>
+<v t="leo.20200110061056.3"><vh>NX12</vh></v>
 </v>
 </v>
 </v>
@@ -48,15 +56,16 @@
 </vnodes>
 <tnodes>
 <t tx="leo.20180902120523.1"></t>
-<t tx="leo.20180902120523.10">## CMSimfly 網際內容管理
+<t tx="leo.20180902120523.10"># CAD2019
+## 40723146
+#### [網站](https://s40723146.github.io/cad2019/content/index.html)
+#### [倉儲](https://github.com/s40723146/cad2019)
 
-### KMOLab
 
 &lt;small&gt;
 Created by [KMOLab](http://lab.kmol.info/)
 &lt;/small&gt;
 
-[CMSimfly 網誌](./../blog/index.html)
 
 
 </t>
@@ -69,16 +78,14 @@ Created by [KMOLab](http://lab.kmol.info/)
 
 						
 </t>
-<t tx="leo.20180902120523.12"># 投影片快捷鍵
+<t tx="leo.20180902120523.12">### 繪圖
+* [NX12](https://s40723146.github.io/cad2019/content/NX%E7%B9%AA%E5%9C%96.html)
 
-* 利用箭頭上下前後換頁
-* 按 f 鍵進入全螢幕模式 (full screen)
-* 按 s 鍵可以顯示投影片筆記 (show)
-* 按 o 鍵可以切換單張或全域檢視 (overview)
-* 按 b 或 . 鍵可以切換螢幕黑屏 (black)
-* 按 Esc 可以退出全螢幕或全域檢視 (Escape)
+* [Onshape](https://s40723146.github.io/cad2019/content/Onshape%E7%B9%AA%E5%9C%96.html)
 
-</t>
+* [Solvespace](https://s40723146.github.io/cad2019/content/SloveSpace%E7%B9%AA%E5%9C%96.html)
+
+* Inventor2019 (另一組員)</t>
 <t tx="leo.20180902120523.13">&lt;section&gt;
 @others
 &lt;/section&gt;
@@ -95,12 +102,10 @@ Created by [KMOLab](http://lab.kmol.info/)
 
 						
 </t>
-<t tx="leo.20180902120523.15"># 數學符號與方程式
+<t tx="leo.20180902120523.15"># NX12 繪圖認證
+&lt;iframe src="https://player.vimeo.com/video/383853993" width="640" height="492" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
 
-Inline math equations go in like so: $\omega = d\phi / dt$. Display
-math should get its own line and be put in in double-dollarsigns:
 
-$$I = \int \rho R^{2} dV$$
 </t>
 <t tx="leo.20180902120523.16">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
@@ -113,48 +118,9 @@ $$I = \int \rho R^{2} dV$$
 
 						
 </t>
-<t tx="leo.20180902120523.17">## 利用 Markdown 寫投影片
-以下利用 Markdown 格式展示 Python 程式碼:
-```
-@language python
-# use threading and subprocess to threading the make process
-import os
-import subprocess
-import threading
+<t tx="leo.20180902120523.17">## Onshape 繪圖認證
+&lt;iframe src="https://player.vimeo.com/video/383856005" width="640" height="492" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
 
-def domake():
-    
-    path = "../exposed/api/exposed"
-    ubuntu = "../Ubuntu"
-    
-    # create obj path
-    
-    if not os.path.exists(path+"/../obj"):
-        os.makedirs(path+"/../obj")
-    
-    subprocess.call(["make", "clean"], cwd=path)
-    subprocess.call("make", cwd=path)
-    subprocess.call(["cp", "{libslvs.so, _slvs.so, slvs.py}", ubuntu], cwd=path)
-    subprocess.call(["python3", "circle_ex.py"], cwd=path+"/"+ubuntu)
-    
-make = threading.Thread(target=domake)
-make.start()
-```
-</t>
-<t tx="leo.20180902120523.18">&lt;section data-markdown&gt;
-    &lt;script type="text/template"&gt;
-@others
-    &lt;/script&gt;
-&lt;/section&gt;
-
-
-						
-</t>
-<t tx="leo.20180902120523.19">## 使用 iframe 導入影片
-
-### 導入影片 template
-
-&lt;iframe src="https://player.vimeo.com/video/183950627" width="640" height="492" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
 </t>
 <t tx="leo.20180902120523.2"></t>
 <t tx="leo.20180902120523.3">@language xml
@@ -326,5 +292,93 @@ QLineEdit#editorLabel {
 }</t>
 <t tx="leo.20180902120538.3">horizontal: body pane to the left
 vertical: body pane on the botton</t>
+<t tx="leo.20200110055408.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx="leo.20200110055408.2">## Solvespace 自走車組件
+&lt;iframe src="https://player.vimeo.com/video/383856654" width="640" height="492" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+
+</t>
+<t tx="leo.20200110055410.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx="leo.20200110055410.2">## [繪圖軟體差異性](https://s40723146.github.io/cad2019/content/%E7%B9%AA%E5%9C%96%E8%BB%9F%E9%AB%94%E5%B7%AE%E7%95%B0%E6%80%A7.html)&lt;small&gt;
+* Inventor2019: 繪製過程沒什麼太大問題，繪製完線條之後才進行標註約束，讓他成為我們指定的形狀及尺寸之後再去做擠出成型的動作。
+
+* NX12 : 不知道是不是工作環境的問題，繪製過程常常卡頓，和其他的繪圖難體多花了一些時間，繪製線條完之後都會先以基準線XYZ去做標註的動作，。
+
+* SolveSpace : 跑起來最為流暢，可惜功能不多，標註、繪製的限制較多(線與線的標註、平面的選定)。
+
+* Onshape : 需要註冊，繪製起來最順手，介面功能清楚，隨時雲端存檔，可以直接讓別人觀看你所繪製的零組件。&lt;small&gt;
+
+</t>
+<t tx="leo.20200110060437.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20200110060437.2">### [NX應力分析](https://s40723146.github.io/cad2019/content/NX%E6%87%89%E5%8A%9B%E5%88%86%E6%9E%90.html)
+&lt;small&gt;
+第八章 有限元素分析
+* 有限元素分析（FEA）是有限元素方法（FEM）的實際運用，他用於對結構或流體所施加的因素(例如力、壓力、熱量和振動)來做出反應行為。
+通常，開始的過程都會先從創建幾何模型開始，之後再將模型細分(網狀化)成許多在特定的節點上連結在一起的簡單幾何形狀的小塊(元素)，而材料的性質和限制條件也會應用在元素上。
+在最後，許多軟體像是NX12都能解決有限元素分析（FEA）的問題並將結果輸出且可視化。有限元素分析（FEA）能夠幫助工程師在製造和測試前，更加了解產品的性能。
+有限元素分析（FEA）的應用包括結構分析、熱分析、流體力學和電磁兼容性
+其中，有限元素分析（FEA）最常用於結構和固體力學，並應用於計算機械性能（例如應力和位移）。這些（應力和位移）的計算對機械部件的性能非常重要，甚至能夠預防故障。
+本章中，我們將處理實體零件的結構應力和應變分析。
+</t>
+<t tx="leo.20200110061056.1">&lt;section&gt;
+@others
+&lt;/section&gt;
+
+</t>
+<t tx="leo.20200110061056.2">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx="leo.20200110061056.3">### [WEEK17 建立節點](https://s40723146.github.io/cad2019/content/%E9%87%8D%E9%BB%9E%E6%95%B4%E7%90%86.html)
+#### Building the joints&lt;small&gt; 
+----------------------------------------------------
+* 知道每個關節的準確的位置和方向的情況
+know the exact position and orientation of each of the joints
+
+* 1.[菜單欄-&gt;添加-&gt;節點-&gt; ...]來添加節點
+add the joints with [Menu bar --&gt; Add --&gt; Joints --&gt; ...]
+
+* 2.可以使用“位置”欄和“方向”欄更改其位置和方向
+we can change their position and orientation with the position dialog and orientation dialog.
+
+* 3.透過模型瀏覽器中位於Models / tools / Denavit-Hartenberg joint creator.ttm中的工具模型來構建關節每個關節的準確的位置和方向
+we can build our joints via the tool model located in Models/tools/Denavit-Hartenberg joint creator.ttm, in the model browser.
+Othertimes, we have no information about the joint locations and orientations
+</t>
 </tnodes>
 </leo_file>
