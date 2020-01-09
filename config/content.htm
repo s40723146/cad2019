@@ -141,18 +141,33 @@
 <p><span>----------------------------------------------------------------------------------</span></p>
 <p><span>組合展示</span></p>
 <p><span><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/2RZ1kI_X8OU" width="400"></iframe></span></p>
-<p></p>
-<h1>教科書</h1>
+<h2>Onshape繪圖</h2>
+<p><img alt="" height="288" src="/images/1.png" width="300"/></p>
+<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/8_K92yEd_-A" width="400"></iframe></p>
+<p><span>---------------------------------------------------------------------------------------</span></p>
+<p><img alt="" height="232" src="/images/2.png" width="300"/></p>
+<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/OtOWJq8MFYk" width="400"></iframe></p>
+<p><span>---------------------------------------------------------------------------------------</span></p>
+<p><span><img alt="" height="165" src="/images/3.png" width="300"/></span></p>
+<p><span><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/bOmP-DOCINo" width="400"></iframe></span></p>
+<p><span>---------------------------------------------------------------------------------------</span></p>
+<p><span><img alt="" height="288" src="/images/4.png" width="300"/></span></p>
+<p><span><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/tRcYVJRw0KQ" width="400"></iframe></span></p>
+<p><span>---------------------------------------------------------------------------------------</span></p>
+<p><span><img alt="" height="274" src="/images/5.png" width="300"/></span></p>
+<p><span><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/Ya1RppQ38p8" width="400"></iframe></span></p>
+<p><span>---------------------------------------------------------------------------------------</span></p>
+<p><span><img alt="" height="280" src="/images/6.png" width="300"/></span></p>
+<p><span><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/hd3wI90V7qo" width="400"></iframe></span></p><h1>教科書</h1>
 <h3>NX應力分析</h3>
-<h2>第八章</h2>
+<p>第八章</p>
 <p>第八章 有限元素分析</p>
 <p>有限元素分析（<span>FEA</span>）是有限元素方法（<span>FEM</span>）的實際運用，他用於對結構或流體所施加的因素<span>(</span>例如力、壓力、熱量和振動<span>)</span>來做出反應行為。</p>
 <p>通常，開始的過程都會先從創建幾何模型開始，之後再將模型細分(網狀化)成許多在特定的節點上連結在一起的簡單幾何形狀的小塊(元素)，而材料的性質和限制條件也會應用在元素上。</p>
 <p>在最後，許多軟體像是NX12都能解決有限元素分析（<span>FEA</span>）的問題並將結果輸出且可視化。有限元素分析（<span>FEA</span>）能夠幫助工程師在製造和測試前，更加了解產品的性能。</p>
 <p>有限元素分析（<span>FEA</span>）的應用包括結構分析、熱分析、流體力學和電磁兼容性</p>
 <p>其中，有限元素分析（<span>FEA</span>）最常用於結構和固體力學，並應用於計算機械性能（例如應力和位移）。這些（應力和位移）的計算對機械部件的性能非常重要，甚至能夠預防故障。</p>
-<p>本章中，我們將處理實體零件的結構應力和應變分析。</p>
-<h2>教學內容</h2>
+<p>本章中，我們將處理實體零件的結構應力和應變分析。</p><h2>教學內容</h2>
 <p>建立節點</p>
 <p>現在，我們將關注節點和馬達，大多數時候，我們知道每個關節的準確的位置和方向，在這種情況下，我們只需使用按下<span>[</span>菜單欄<span>-&gt;</span>添加<span>-&gt;</span>關節<span>-&gt; ...]</span>來添加關節，然後我們可以使用“位置”欄和“方向”欄更改其位置和方向。在其他情況下，我們只有<span> D-H</span>矩陣（即<span>D-H</span>）參數，在這種情況下，我們可以透過模型瀏覽器中位於<span>Models / tools / Denavit-Hartenberg joint creator.ttm</span>中的工具模型來構建關節，</p>
 <p>但在其他的狀況下，我們不清楚關節位置和他的方向。所以，我們需要從導入的網格中提取它們。讓我們假設這是我們目前的情況。不用處理修改過的，更近似的網格，而是打開一個新情景，然後再次導入原始<span>CAD</span>數據。大多數時候，我們可以從最初的網格中提取網格或它的基本形狀，第一步是細分原始網格，如果不起作用，我們將經由三角形編輯模式來進行操作。讓我們假設我們現在可以細分原始的網格，我們現在可以觀察更小的物件，我們正在尋找迴轉形狀，它可以用作在其位置創建節點並以相同方向來參考。首先，刪除所有不需要的物件，有時在多個打開的場景中工作也很有幫助，它可以便於可視化和操作，在我們的案例中，我們首先注意機器人的底座：它包含一個圓柱體，該圓柱體的第一個節點的位置正確。在三角形編輯模式下，我們有：</p>
